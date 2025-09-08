@@ -20,7 +20,7 @@ Exemplo de aplicação em **Node.js** utilizando **Fastify**, **TypeScript** e *
 
 ## 📂 Estrutura do Projeto
 
-src/
+```src/
 ├─ domain/
 │ ├─ entities/User.ts
 │ └─ repositories/UserRepository.ts
