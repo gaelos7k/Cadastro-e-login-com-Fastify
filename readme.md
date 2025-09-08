@@ -90,5 +90,5 @@ GET /users
 
 2. JWT é usado para autenticação de rotas protegidas.
 
-## 📄 Licença
+---
   *MIT License © Gabriel Henrique*
