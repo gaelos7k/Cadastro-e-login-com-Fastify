@@ -1,15 +1,34 @@
 {
-    "compilerOptions": {
-      "target": "ES2020",                      // Código moderno
-      "module": "CommonJS",                    // Usa require/exports, mais fácil no Node
-      "rootDir": "src",                        // Código-fonte está em src
-      "outDir": "dist",                        // Código compilado vai para dist
-      "strict": true,                          // Regras de tipagem fortes
-      "esModuleInterop": true,                 // Permite importar libs antigas (ex: bcrypt, fastify)
-      "forceConsistentCasingInFileNames": true,
-      "skipLibCheck": true
-    },
-    "include": ["src"],
-    "exclude": ["node_modules", "dist"]
-  }
-  
+  "compilerOptions": {
+    "target": "ES2020", // Código moderno
+    "module": "CommonJS", // Usa require/exports, mais fácil no Node
+    "rootDir": "src", // Código-fonte está em src
+    "outDir": "dist", // Código compilado vai para dist
+    "strict": true, // Regras de tipagem fortes
+    "esModuleInterop": true, // Permite importar libs antigas (ex: bcrypt, fastify)
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": [
+        " * "
+      ],
+      "@domain/*": [
+        "domain/*"
+      ],
+      "@infrastructure/*": [
+        "infrastructure/*"
+      ],
+      "@application/*": [
+        "application/*"
+      ],
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
