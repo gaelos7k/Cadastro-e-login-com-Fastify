@@ -22,6 +22,12 @@
       "@application/*": [
         "application/*"
       ],
+      "@usecases/*": [
+        "usecases/*"
+      ],
+      "@interfaces/*": [
+        "interfaces/*"
+      ]
     }
   },
   "include": [
