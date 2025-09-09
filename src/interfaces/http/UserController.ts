@@ -1,9 +1,9 @@
 import { FastifyInstance } from "fastify";
-import { RegisterUser } from "../../usecases/RegisterUser";
-import { LoginUser } from "../../usecases/LoginUser";
-import { InMemoryUserRepository } from "../../infrastructure/InMemoryUserRepository";
-import { PasswordHasher } from "../../infrastructure/security/PasswordHasher";
-import { JwtService } from "../../infrastructure/security/JwtService";
+import { RegisterUser } from "@usecases/RegisterUser";
+import { LoginUser } from "@usecases/LoginUser";
+import { InMemoryUserRepository } from "@infrastructure/InMemoryUserRepository";
+import { PasswordHasher } from "@infrastructure/security/PasswordHasher";
+import { JwtService } from "@infrastructure/security/JwtService";
 
 const userRepo = new InMemoryUserRepository();
 const hasher = new PasswordHasher();

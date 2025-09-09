@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import { userRoutes } from "./interfaces/http/UserController";
+import { userRoutes } from "@interfaces/http/UserController";
 
 async function start() {
     const app = Fastify();
